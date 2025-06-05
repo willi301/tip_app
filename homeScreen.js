@@ -9,7 +9,7 @@ export default function HomeScreen({ navigation }) {
       {/* this is the buttons for the tip options */}
       <View style={styles.option}>
         <TouchableOpacity
-          // onPress={onPressLearnMore}
+          onPress={() => navigation.navigate('End')}
           style={styles.button}
           color="cornflowerblue"
         >
@@ -17,7 +17,7 @@ export default function HomeScreen({ navigation }) {
         </TouchableOpacity>
           
         <TouchableOpacity
-          // onPress={onPressLearnMore}
+          onPress={() => navigation.navigate('End')}
           style={styles.button}
           color="cornflowerblue"
         >
@@ -25,7 +25,7 @@ export default function HomeScreen({ navigation }) {
         </TouchableOpacity>
 
         <TouchableOpacity
-          // onPress={onPressLearnMore}
+          onPress={() => navigation.navigate('End')}
           style={styles.button}
           color="cornflowerblue"
         >
