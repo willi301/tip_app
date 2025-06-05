@@ -14,11 +14,18 @@ export default function Other({ navigation }) {
         <Text style={styles.title}>Enter Tip</Text>
 
         {/* Tip input from user */}
-        <TextInput
-        style={styles.input}
-        keyboardType="numeric"  // 👈 This brings up a number pad
-        placeholder="Enter a number"
-        />
+            <TextInput
+            style={styles.input}
+            keyboardType="numeric"  // 👈 This brings up a number pad
+            placeholder="Enter a number"
+            />
+        
+
+        <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate('End')}>
+            <Text style={styles.buttonText}>enter</Text>
+        </TouchableOpacity>
 
 
       <StatusBar style="auto" />
@@ -51,7 +58,6 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 18,       // 👈 Font size of the button label
   },
-
   input: {
     marginTop: 40,
     height: 40,
