@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import {StyleSheet, Button, View, Text, Alert, TouchableOpacity} from 'react-native';
 
-export default function HomeScreen(navigation) {
+export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Add a Tip?</Text>
